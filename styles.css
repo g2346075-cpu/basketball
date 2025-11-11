@@ -1,6 +1,6 @@
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f3f4f6;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f57c00, #ffca28);
   margin: 0;
   padding: 0;
   display: flex;
@@ -11,46 +11,73 @@ body {
 
 .quiz-container {
   background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  width: 340px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
-h1 {
-  font-size: 2em;
-  color: #333;
+#quiz-title {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #e65100;
 }
 
-button {
-  background-color: #00796b;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-  font-size: 16px;
-  margin-top: 20px;
+#progress {
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-button:hover {
-  background-color: #004d40;
+#question {
+  font-size: 1.2em;
+  margin: 20px 0;
 }
 
 #choices button {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin-bottom: 10px;
   border: none;
-  border-radius: 5px;
-  background-color: #00796b;
+  border-radius: 8px;
+  background-color: #ff9800;
   color: white;
   font-size: 16px;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
 #choices button:hover {
-  background-color: #004d40;
+  background-color: #f57c00;
+}
+
+#choices button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+#feedback {
+  font-size: 1em;
+  font-weight: bold;
+  height: 24px;
+  margin-top: 10px;
+  color: #333;
+}
+
+button#next-btn {
+  background-color: #e65100;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+  display: none;
+}
+
+button#next-btn:hover {
+  background-color: #bf360c;
 }
