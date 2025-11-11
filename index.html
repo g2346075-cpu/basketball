@@ -4,19 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz App</title>
+  <title>バスケクイズ</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <div class="quiz-container">
-    <h1>Q1</h1>
-    <p id="question">オーストラリアの首都はどこでしょう？</p>
-    <div id="choices">
-      <!-- 選択肢ボタンがここに追加されます -->
-    </div>
+    <h1 id="quiz-title">🏀 バスケクイズ</h1>
+    <div id="progress">Q1 / 10</div>
+    <p id="question"></p>
+    <div id="choices"></div>
+    <p id="feedback"></p>
     <button id="next-btn" style="display: none;">次の質問へ</button>
   </div>
+
   <script src="app.js" defer></script>
 </body>
 
